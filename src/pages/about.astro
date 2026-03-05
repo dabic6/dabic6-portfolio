@@ -1,0 +1,52 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/sections/Header.astro";
+import Footer from "../components/sections/Footer.astro";
+import GlowLineSeparator from "../components/ui/separator/GlowLineSeparator.astro";
+---
+
+<html lang="en" data-theme="dark" class="dark">
+  <head>
+    <BaseHead
+      title="About"
+      description="About Dejan Dabic — marketing, leadership, digital growth, and modern web tools."
+    />
+  </head>
+  <body>
+    <Header />
+    <main class="mx-auto max-w-3xl px-4 py-10">
+      <h1 class="text-3xl md:text-4xl font-semibold text-foreground">About</h1>
+
+      <div class="mt-6 space-y-5 text-[color:var(--color-text-secondary)] leading-relaxed">
+        <p>
+          Hello — I'm <strong class="text-foreground">Dejan Dabic</strong>, a marketing professional with several years
+          of leadership experience in high-volume, international environments (retail and cinema operations).
+        </p>
+
+        <p>
+          My focus is <strong class="text-foreground">digital marketing and growth</strong>: content strategy, paid ads
+          (Meta &amp; Google fundamentals), performance thinking, and practical execution that helps businesses get
+          more messages, calls and bookings.
+        </p>
+
+        <p>
+          What makes me different is that I also have <strong class="text-foreground">strong technical awareness</strong>.
+          I can build and maintain modern marketing websites and small tools (HTML/CSS/JavaScript, Astro, Git/GitHub),
+          which improves speed, consistency and collaboration with designers and developers.
+        </p>
+
+        <p>
+          If you want to connect, the fastest way is LinkedIn:
+          <a class="text-[var(--accent)] underline" href="https://www.linkedin.com/in/dejan-dabic6" target="_blank" rel="noopener">
+            linkedin.com/in/dejan-dabic6
+          </a>.
+        </p>
+      </div>
+
+      <div class="mt-10">
+        <GlowLineSeparator />
+      </div>
+    </main>
+    <Footer />
+  </body>
+</html>

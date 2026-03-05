@@ -1,0 +1,30 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/sections/Header.astro";
+import Footer from "../components/sections/Footer.astro";
+import Projects from "../components/sections/Projects.astro";
+import HeroSection from "../components/sections/HeroSection.astro";
+import GlowLineSeparator from "../components/ui/separator/GlowLineSeparator.astro";
+---
+
+<html lang="en" data-theme="dark" class="dark">
+  <head>
+    <BaseHead
+      title="Projects"
+      description="Selected projects and experiments: marketing, content, and practical tools."
+    />
+  </head>
+  <body>
+    <Header />
+    <main>
+      <HeroSection
+        title="Selected Projects"
+        subtitle="A few projects that combine marketing thinking, execution, and modern web tools."
+        showCTA={false}
+      />
+      <Projects />
+      <GlowLineSeparator />
+    </main>
+    <Footer />
+  </body>
+</html>

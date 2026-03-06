@@ -16,7 +16,6 @@ const absoluteUrl = new URL(Astro.url.pathname, Astro.site).toString();
 const siteOrigin = Astro.site ?? new URL(Astro.url).origin;
 
 const { title, description, image } = Astro.props;
-const siteOrigin = Astro.site;
 
 // image može biti:
 // - undefined (nema slike)

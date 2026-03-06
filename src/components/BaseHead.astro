@@ -16,7 +16,18 @@ const absoluteUrl = new URL(Astro.url.pathname, Astro.site).toString();
 const siteOrigin = Astro.site ?? new URL(Astro.url).origin;
 
 const { title, description, image } = Astro.props;
-const imageUrl = new URL(image.src, siteOrigin).toString();
+const siteOrigin = Astro.site;
+
+// image može biti:
+// - undefined (nema slike)
+// - string (npr "/images/avatar.jpg")
+// - ImageMetadata (ima .src)
+const imageUrl =
+  typeof image === "string"
+    ? new URL(image, siteOrigin).toString()
+    : image?.src
+      ? new URL(image.src, siteOrigin).toString()
+      : undefined;
 ---
 
 <!-- Global Metadata -->

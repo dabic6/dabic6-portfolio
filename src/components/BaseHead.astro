@@ -15,7 +15,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const absoluteUrl = new URL(Astro.url.pathname, Astro.site).toString();
 const siteOrigin = Astro.site ?? new URL(Astro.url).origin;
 
-const { title, description, image = FallbackImage } = Astro.props;
+const { title, description, image } = Astro.props;
 const imageUrl = new URL(image.src, siteOrigin).toString();
 ---
 

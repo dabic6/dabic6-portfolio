@@ -1,59 +1,135 @@
 ---
-import BaseLayout from "../../layouts/BaseLayout.astro";
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/sections/Header.astro';
+import Footer from '../../components/sections/Footer.astro';
+import Button from '../../components/ui/button/Button.astro';
 ---
 
-<BaseLayout title="Portfolio Website Case Study">
+<html lang="en" data-theme="dark" class="dark">
+  <head>
+    <BaseHead
+      title="Personal Portfolio Website — Case Study"
+      description="Case study for the personal portfolio website built to showcase marketing projects, experiments and tools."
+    />
+  </head>
 
-<h1>Personal Portfolio Website</h1>
+  <body>
+    <Header />
 
-<div class="mt-6 grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
-  <div>
-    <p class="text-[color:var(--color-text-muted)]">Project Type</p>
-    <p class="font-semibold">Personal Portfolio</p>
-  </div>
+    <main class="mx-auto max-w-4xl px-4 py-12">
 
-  <div>
-    <p class="text-[color:var(--color-text-muted)]">Role</p>
-    <p class="font-semibold">Concept, Design, Development</p>
-  </div>
+      <div class="mb-8">
+        <Button href="/portfolio" variant="outline" size="sm">
+          ← Back to Projects
+        </Button>
+      </div>
 
-  <div>
-    <p class="text-[color:var(--color-text-muted)]">Tools</p>
-    <p class="font-semibold">Astro, GitHub, Cloudflare Pages</p>
-  </div>
+      <section class="card-surface p-8 md:p-10">
 
-  <div>
-    <p class="text-[color:var(--color-text-muted)]">Year</p>
-    <p class="font-semibold">2026</p>
-  </div>
-</div>
+        <p class="text-sm uppercase tracking-[0.18em] text-[var(--accent)] mb-3">
+          Case Study
+        </p>
 
-<hr class="my-8 border-[color:var(--border)]">
+        <h1 class="text-3xl md:text-5xl font-semibold text-foreground m-0">
+          Personal Portfolio Website
+        </h1>
 
-<h2>Overview</h2>
-<p>
-This portfolio website was built to present projects, experiments and
-technical tools in a clear and structured way that goes beyond a
-traditional CV.
-</p>
+        <p class="mt-4 text-lg text-[color:var(--color-text-secondary)] leading-relaxed">
+          A personal portfolio website built to present marketing projects,
+          experiments and internal tools in a structured and professional way.
+        </p>
 
-<h2>Problem</h2>
-<p>
-A standard resume often cannot show real work, digital projects or the
-thinking process behind marketing ideas and experiments.
-</p>
+        <div class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
 
-<h2>Solution</h2>
-<p>
-Developed a personal portfolio using Astro and deployed it through
-Cloudflare Pages to create a fast, clean and structured presentation of
-projects and case studies.
-</p>
+          <div class="rounded-xl border border-white/8 bg-white/3 p-4">
+            <p class="text-[color:var(--color-text-muted)] m-0">Project Type</p>
+            <p class="font-semibold mt-2 m-0 text-foreground">Personal Portfolio</p>
+          </div>
 
-<h2>Result</h2>
-<p>
-The website now acts as a central hub for showcasing marketing concepts,
-experiments, internal tools and research projects.
-</p>
+          <div class="rounded-xl border border-white/8 bg-white/3 p-4">
+            <p class="text-[color:var(--color-text-muted)] m-0">Role</p>
+            <p class="font-semibold mt-2 m-0 text-foreground">Concept, Design & Development</p>
+          </div>
 
-</BaseLayout>
+          <div class="rounded-xl border border-white/8 bg-white/3 p-4">
+            <p class="text-[color:var(--color-text-muted)] m-0">Tools</p>
+            <p class="font-semibold mt-2 m-0 text-foreground">Astro, GitHub, Cloudflare Pages</p>
+          </div>
+
+          <div class="rounded-xl border border-white/8 bg-white/3 p-4">
+            <p class="text-[color:var(--color-text-muted)] m-0">Year</p>
+            <p class="font-semibold mt-2 m-0 text-foreground">2026</p>
+          </div>
+
+        </div>
+
+        <hr class="my-8 border-[color:var(--border)]" />
+
+        <div class="space-y-8 text-[color:var(--color-text-secondary)] leading-relaxed">
+
+          <section>
+            <h2 class="text-2xl font-semibold text-foreground mb-3">Overview</h2>
+            <p>
+              This portfolio website was built to present projects,
+              marketing concepts and technical experiments in a format
+              that goes beyond a traditional CV.
+            </p>
+          </section>
+
+          <section>
+            <h2 class="text-2xl font-semibold text-foreground mb-3">Problem</h2>
+            <p>
+              Traditional resumes often fail to demonstrate real work,
+              digital projects or the thinking process behind marketing
+              strategies and experiments.
+            </p>
+          </section>
+
+          <section>
+            <h2 class="text-2xl font-semibold text-foreground mb-3">Goal</h2>
+            <p>
+              The goal was to create a central place where projects,
+              tools and marketing ideas could be presented clearly
+              and professionally.
+            </p>
+          </section>
+
+          <section>
+            <h2 class="text-2xl font-semibold text-foreground mb-3">Approach</h2>
+            <p>
+              The site was built using Astro for performance and
+              deployed through Cloudflare Pages. The focus was on
+              clean structure, fast loading and a clear presentation
+              of case studies.
+            </p>
+          </section>
+
+          <section>
+            <h2 class="text-2xl font-semibold text-foreground mb-3">Outcome</h2>
+            <p>
+              The portfolio now acts as a central hub for showcasing
+              marketing concepts, experiments and internal tools
+              while providing a clearer professional presence.
+            </p>
+          </section>
+
+        </div>
+
+        <div class="mt-10 flex flex-wrap gap-3">
+          <Button href="https://dabic6-portfolio.pages.dev" variant="primary" size="sm">
+            View Website
+          </Button>
+
+          <Button href="/portfolio" variant="secondary" size="sm">
+            Back to Projects
+          </Button>
+        </div>
+
+      </section>
+
+    </main>
+
+    <Footer />
+
+  </body>
+</html>

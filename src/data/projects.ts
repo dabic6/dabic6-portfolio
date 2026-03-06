@@ -1,3 +1,4 @@
+
 export const projects = [
   {
     title: "Instagram Reel Framing Tool",
@@ -9,9 +10,11 @@ export const projects = [
     result:
       "Created a faster and more consistent workflow for video formatting while reducing manual preparation time by around 70% in personal use.",
     ctaText: "Open Live Tool",
-    ctaLink: "https://instagram-reels-maker-production.up.railway.app/instagram-frame.html",
+    ctaLink:
+      "https://instagram-reels-maker-production.up.railway.app/instagram-frame.html",
     caseStudyLink: "/case-studies/reel-framing-tool",
   },
+
   {
     title: "Harmonia Café Marketing Concept",
     techStack: "Content strategy • Positioning • Client pitch",
@@ -25,6 +28,7 @@ export const projects = [
     ctaLink: "https://harmonia-client.pages.dev",
     caseStudyLink: "/case-studies/harmonia-cafe",
   },
+
   {
     title: "Rast Biznisa — Instagram Experiment",
     techStack: "Content strategy • Growth experiments • Instagram",
@@ -35,9 +39,11 @@ export const projects = [
     result:
       "Generated practical insights about audience engagement, content structure and how business-oriented content can be positioned more effectively.",
     ctaText: "View Instagram",
-    ctaLink: "https://www.instagram.com/rastbiznisa_bg?igsh=bHVvczFncHYwbjNk&utm_source=qr",
+    ctaLink:
+      "https://www.instagram.com/rastbiznisa_bg?igsh=bHVvczFncHYwbjNk&utm_source=qr",
     caseStudyLink: "/case-studies/rast-biznisa",
   },
+
   {
     title: "Crypto Ecosystem Research — Terra / LUNA Collapse",
     techStack: "Research • Ecosystem analysis • Crypto narratives",
@@ -47,9 +53,23 @@ export const projects = [
       "Conducted independent research into the Terra collapse, the UST depeg, the LUNA supply explosion, the Terra 2.0 split, and the current community-driven rebuilding efforts around LUNC and USTC.",
     result:
       "Built a structured research case study that explains one of the most important ecosystem failures in crypto and the long-term narrative, governance and rebuilding attempts that followed.",
-    ctaText: "Read Summary",
+    ctaText: "View Full Case Study",
     ctaLink: "/case-studies/luna-research",
     caseStudyLink: "/case-studies/luna-research",
+  },
+
+  {
+    title: "Personal Portfolio Website",
+    techStack: "Astro • GitHub • Cloudflare Pages",
+    problem:
+      "Traditional CVs often fail to clearly demonstrate practical skills, digital projects and initiative.",
+    solution:
+      "Built a personal portfolio website using Astro to present projects, experiments and tools in a structured and professional format.",
+    result:
+      "Created a clearer professional presence and a more effective way to showcase practical marketing and technical work.",
+    ctaText: "View Website",
+    ctaLink: "https://dabic6-portfolio.pages.dev",
+    caseStudyLink: "/case-studies/portfolio-site",
   },
 ];
 

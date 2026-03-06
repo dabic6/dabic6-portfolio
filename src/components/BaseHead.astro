@@ -3,7 +3,6 @@
 // all pages through the use of the <BaseHead /> component.
 import '../styles/global.css';
 import type { ImageMetadata } from 'astro';
-import FallbackImage from '../assets/images/sample-avatar.jpg';
 import { SITE_TITLE } from '../consts';
 
 interface Props {
@@ -62,7 +61,6 @@ const imageUrl = new URL(image.src, siteOrigin).toString();
 <meta property="og:url" content={absoluteUrl} />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
-<meta property="og:image" content={imageUrl} />
 <meta property="og:image:alt" content={title} />
 
 <!-- Twitter -->
@@ -70,4 +68,3 @@ const imageUrl = new URL(image.src, siteOrigin).toString();
 <meta property="twitter:url" content={absoluteUrl} />
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
-<meta property="twitter:image" content={imageUrl} />

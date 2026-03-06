@@ -1,8 +1,7 @@
-import avatar from '../assets/images/sample-avatar.jpg';
 
 export const author = {
   name: 'Dejan Dabic',
-  avatar,
+  avatar: '/images/avatar.jpg',
   url: 'https://www.linkedin.com/in/dejan-dabic6',
 };
 

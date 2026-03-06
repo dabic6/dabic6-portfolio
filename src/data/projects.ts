@@ -1,51 +1,55 @@
 export const projects = [
   {
     title: "Instagram Reel Framing Tool",
-    techStack: "Web app • FFmpeg • Content production",
+    techStack: "FFmpeg • Video processing • Internal tool",
     problem:
-      "Preparing social media videos manually is repetitive and time-consuming.",
+      "Preparing social media videos manually is repetitive and time-consuming, especially when each video needs clean framing and publishing-ready formatting.",
     solution:
-      "Built a web tool that lets users upload a video, automatically detect the best format, apply a styled frame, and export Instagram-ready content using FFmpeg.",
+      "Built a web-based tool that lets users upload a video, automatically detect the best format, apply a styled frame, and export an Instagram-ready result using FFmpeg.",
     result:
-      "Reduced manual content preparation time by around 70% in personal workflow.",
+      "Created a faster and more consistent workflow for video formatting while reducing manual preparation time by around 70% in personal use.",
     ctaText: "Open Live Tool",
     ctaLink: "https://instagram-reels-maker-production.up.railway.app/instagram-frame.html",
+    caseStudyLink: "/case-studies/reel-framing-tool",
   },
   {
     title: "Harmonia Café Marketing Concept",
-    techStack: "Marketing strategy • Content concept • Client pitch",
+    techStack: "Content strategy • Positioning • Client pitch",
     problem:
-      "A local café needed a stronger visual identity and a clearer social media direction.",
+      "A local café needed a stronger visual identity and a clearer digital presentation that would make the business look more modern, consistent, and engaging online.",
     solution:
-      "Created a concept project focused on positioning, visual branding, and a content strategy tailored to the target audience.",
+      "Created a concept project that combined positioning, content direction, visual presentation and a client-friendly marketing pitch showing how the café could improve its social media presence.",
     result:
-      "Produced a clear client-facing marketing pitch that demonstrates how a local business could improve digital presentation and engagement.",
-    ctaText: "View Demo",
+      "Produced a structured concept that demonstrates how a local business could strengthen branding and improve audience perception through better content and design consistency.",
+    ctaText: "View Concept",
     ctaLink: "https://harmonia-client.pages.dev",
+    caseStudyLink: "/case-studies/harmonia-cafe",
   },
   {
-    title: "Rast Biznisa — Instagram Growth Experiment",
-    techStack: "Social media • Growth experiments • Content strategy",
+    title: "Rast Biznisa — Instagram Experiment",
+    techStack: "Content strategy • Growth experiments • Instagram",
     problem:
-      "Many small business pages struggle to grow consistently through organic content.",
+      "Organic growth on Instagram is difficult when content lacks strong hooks, clear positioning and repeatable formats that hold audience attention.",
     solution:
-      "Built an experimental Instagram project to test different hooks, formats, and posting approaches for business-focused content.",
+      "Built an experimental Instagram project to test different messaging styles, hooks, post structures and business-focused content formats.",
     result:
-      "Developed practical insights into what improves audience engagement and content positioning.",
+      "Generated practical insights about audience engagement, content structure and how business-oriented content can be positioned more effectively.",
     ctaText: "View Instagram",
     ctaLink: "https://www.instagram.com/rastbiznisa_bg?igsh=bHVvczFncHYwbjNk&utm_source=qr",
+    caseStudyLink: "/case-studies/rast-biznisa",
   },
   {
-    title: "This Portfolio Website",
-    techStack: "Astro • Portfolio design • Personal branding",
+    title: "Crypto Ecosystem Research — Terra / LUNA Collapse",
+    techStack: "Research • Ecosystem analysis • Crypto narratives",
     problem:
-      "A standard CV does not fully show practical skills, projects, or initiative.",
+      "The collapse of Terra created confusion around what happened, why the system failed, and how the remaining LUNA Classic ecosystem continued evolving afterward.",
     solution:
-      "Built a personal portfolio website to present marketing projects, AI tools, and technical work in a clean and professional format.",
+      "Conducted independent research into the Terra collapse, the UST depeg, the LUNA supply explosion, the Terra 2.0 split, and the current community-driven rebuilding efforts around LUNC and USTC.",
     result:
-      "Created a stronger personal brand presence and a better way to communicate both marketing and technical capabilities.",
-    ctaText: "GitHub Repo",
-    ctaLink: "https://github.com/dabic6/dabic6-portfolio",
+      "Built a structured research case study that explains one of the most important ecosystem failures in crypto and the long-term narrative, governance and rebuilding attempts that followed.",
+    ctaText: "Read Summary",
+    ctaLink: "/case-studies/luna-research",
+    caseStudyLink: "/case-studies/luna-research",
   },
 ];
 

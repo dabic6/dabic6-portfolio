@@ -28,7 +28,7 @@ const { title } = Astro.props as Props;
             {p.techStack}
           </p>
 
-          <div class="space-y-4 flex-1">
+          <div class="space-y-4">
             <div class="rounded-xl border border-white/8 bg-white/3 p-4">
               <p class="text-xs font-semibold uppercase tracking-wide text-[var(--accent)] mb-2">
                 Problem
@@ -57,12 +57,9 @@ const { title } = Astro.props as Props;
             </div>
           </div>
 
-          <div class="mt-6 flex justify-center gap-3 flex-wrap">
+          <div class="mt-6 flex justify-center">
             <Button href={p.ctaLink} variant="primary" size="sm">
               {p.ctaText}
-            </Button>
-            <Button href={p.caseStudyLink} variant="secondary" size="sm">
-              View Full Case Study
             </Button>
           </div>
         </article>

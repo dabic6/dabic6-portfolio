@@ -1,0 +1,112 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/sections/Header.astro';
+import Footer from '../../components/sections/Footer.astro';
+import Button from '../../components/ui/button/Button.astro';
+---
+
+<html lang="en" data-theme="dark" class="dark">
+  <head>
+    <BaseHead
+      title="Harmonia Café Marketing Concept — Case Study"
+      description="Case study for a concept marketing pitch created for a local café, focused on branding, content and digital presentation."
+    />
+  </head>
+  <body>
+    <Header />
+    <main class="mx-auto max-w-4xl px-4 py-12">
+      <div class="mb-8">
+        <Button href="/portfolio" variant="outline" size="sm">← Back to Projects</Button>
+      </div>
+
+      <section class="card-surface p-8 md:p-10">
+        <p class="text-sm uppercase tracking-[0.18em] text-[var(--accent)] mb-3">Case Study</p>
+        <h1 class="text-3xl md:text-5xl font-semibold text-foreground m-0">Harmonia Café Marketing Concept</h1>
+        <p class="mt-4 text-lg text-[color:var(--color-text-secondary)] leading-relaxed">
+          A concept-based client pitch showing how a local café could improve its digital presentation through stronger branding and more structured content.
+        </p>
+
+        <div class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+          <div class="rounded-xl border border-white/8 bg-white/3 p-4">
+            <p class="text-[color:var(--color-text-muted)] m-0">Project Type</p>
+            <p class="font-semibold mt-2 m-0 text-foreground">Client Pitch Concept</p>
+          </div>
+          <div class="rounded-xl border border-white/8 bg-white/3 p-4">
+            <p class="text-[color:var(--color-text-muted)] m-0">Role</p>
+            <p class="font-semibold mt-2 m-0 text-foreground">Strategy & Presentation</p>
+          </div>
+          <div class="rounded-xl border border-white/8 bg-white/3 p-4">
+            <p class="text-[color:var(--color-text-muted)] m-0">Tools</p>
+            <p class="font-semibold mt-2 m-0 text-foreground">ChatGPT, Claude, Canva, Web Mockup</p>
+          </div>
+          <div class="rounded-xl border border-white/8 bg-white/3 p-4">
+            <p class="text-[color:var(--color-text-muted)] m-0">Year</p>
+            <p class="font-semibold mt-2 m-0 text-foreground">2026</p>
+          </div>
+        </div>
+
+        <hr class="my-8 border-[color:var(--border)]" />
+
+        <div class="space-y-8 text-[color:var(--color-text-secondary)] leading-relaxed">
+          <section>
+            <h2 class="text-2xl font-semibold text-foreground mb-3">Overview</h2>
+            <p>
+              This project was created as a concept pitch for a local café. The purpose was to show how stronger branding,
+              cleaner presentation and more structured content could improve the business's digital presence.
+            </p>
+          </section>
+
+          <section>
+            <h2 class="text-2xl font-semibold text-foreground mb-3">Problem</h2>
+            <p>
+              Many local businesses post online without a clear visual direction or consistent brand identity.
+              As a result, their content often feels generic and does not build enough trust or differentiation.
+            </p>
+          </section>
+
+          <section>
+            <h2 class="text-2xl font-semibold text-foreground mb-3">Goal</h2>
+            <p>
+              The goal was to create a marketing concept that would present the café as more intentional,
+              more visually appealing, and more relevant to its target audience on social media.
+            </p>
+          </section>
+
+          <section>
+            <h2 class="text-2xl font-semibold text-foreground mb-3">Approach</h2>
+            <p>
+              I built the concept around clearer positioning, more cohesive visual presentation and a stronger content direction.
+              The idea was not just to make the page look better, but to make the business feel more recognizable and more professionally presented.
+            </p>
+            <p>
+              For this project I used tools such as ChatGPT and Claude for idea development and refinement,
+              Canva for visual content structuring, and a web mockup presentation to make the pitch easier to understand from a client perspective.
+            </p>
+          </section>
+
+          <section>
+            <h2 class="text-2xl font-semibold text-foreground mb-3">Outcome</h2>
+            <p>
+              The final result was a structured concept pitch that clearly demonstrated how a local café could improve brand perception,
+              content consistency and digital presentation without needing a full rebrand.
+            </p>
+          </section>
+
+          <section>
+            <h2 class="text-2xl font-semibold text-foreground mb-3">What This Project Shows</h2>
+            <p>
+              This case study demonstrates client-facing thinking: understanding a business problem,
+              turning it into a clearer marketing direction, and presenting the solution in a simple and persuasive way.
+            </p>
+          </section>
+        </div>
+
+        <div class="mt-10 flex flex-wrap gap-3">
+          <Button href="https://harmonia-client.pages.dev" variant="primary" size="sm">View Concept</Button>
+          <Button href="/portfolio" variant="secondary" size="sm">Back to Projects</Button>
+        </div>
+      </section>
+    </main>
+    <Footer />
+  </body>
+</html>

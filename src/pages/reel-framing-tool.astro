@@ -1,0 +1,110 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/sections/Header.astro';
+import Footer from '../../components/sections/Footer.astro';
+import Button from '../../components/ui/button/Button.astro';
+---
+
+<html lang="en" data-theme="dark" class="dark">
+  <head>
+    <BaseHead
+      title="Instagram Reel Framing Tool — Case Study"
+      description="Case study for a web-based internal tool designed to speed up social media video formatting and export."
+    />
+  </head>
+  <body>
+    <Header />
+    <main class="mx-auto max-w-4xl px-4 py-12">
+      <div class="mb-8">
+        <Button href="/portfolio" variant="outline" size="sm">← Back to Projects</Button>
+      </div>
+
+      <section class="card-surface p-8 md:p-10">
+        <p class="text-sm uppercase tracking-[0.18em] text-[var(--accent)] mb-3">Case Study</p>
+        <h1 class="text-3xl md:text-5xl font-semibold text-foreground m-0">Instagram Reel Framing Tool</h1>
+        <p class="mt-4 text-lg text-[color:var(--color-text-secondary)] leading-relaxed">
+          A web-based internal content production tool designed to make social media video formatting faster, cleaner and more consistent.
+        </p>
+
+        <div class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+          <div class="rounded-xl border border-white/8 bg-white/3 p-4">
+            <p class="text-[color:var(--color-text-muted)] m-0">Project Type</p>
+            <p class="font-semibold mt-2 m-0 text-foreground">Internal Tool</p>
+          </div>
+          <div class="rounded-xl border border-white/8 bg-white/3 p-4">
+            <p class="text-[color:var(--color-text-muted)] m-0">Role</p>
+            <p class="font-semibold mt-2 m-0 text-foreground">Concept & Workflow Design</p>
+          </div>
+          <div class="rounded-xl border border-white/8 bg-white/3 p-4">
+            <p class="text-[color:var(--color-text-muted)] m-0">Tools</p>
+            <p class="font-semibold mt-2 m-0 text-foreground">FFmpeg, Web UI</p>
+          </div>
+          <div class="rounded-xl border border-white/8 bg-white/3 p-4">
+            <p class="text-[color:var(--color-text-muted)] m-0">Year</p>
+            <p class="font-semibold mt-2 m-0 text-foreground">2026</p>
+          </div>
+        </div>
+
+        <hr class="my-8 border-[color:var(--border)]" />
+
+        <div class="space-y-8 text-[color:var(--color-text-secondary)] leading-relaxed">
+          <section>
+            <h2 class="text-2xl font-semibold text-foreground mb-3">Overview</h2>
+            <p>
+              This project was built to simplify a repetitive part of content production: taking a raw video,
+              formatting it correctly for Instagram, adding a visual frame, and exporting a polished result ready for publishing.
+            </p>
+          </section>
+
+          <section>
+            <h2 class="text-2xl font-semibold text-foreground mb-3">Problem</h2>
+            <p>
+              Preparing social media videos manually usually means adjusting aspect ratios, aligning composition,
+              adding visual structure, and exporting multiple versions before the content feels ready.
+              That process takes time and creates unnecessary friction in content production.
+            </p>
+          </section>
+
+          <section>
+            <h2 class="text-2xl font-semibold text-foreground mb-3">Goal</h2>
+            <p>
+              The goal was to create a lightweight tool that reduces repetitive editing work while keeping the final output
+              visually clean and suitable for Instagram publishing.
+            </p>
+          </section>
+
+          <section>
+            <h2 class="text-2xl font-semibold text-foreground mb-3">Approach</h2>
+            <p>
+              I focused on a simple upload-based workflow: the user uploads a video, the tool detects the best usable format,
+              applies a styled frame, and prepares an export-ready result through FFmpeg-powered processing.
+              The priority was usability, speed, and consistency.
+            </p>
+          </section>
+
+          <section>
+            <h2 class="text-2xl font-semibold text-foreground mb-3">Outcome</h2>
+            <p>
+              The tool turned a repetitive manual process into a faster workflow and reduced video preparation time
+              by around 70% in personal use. More importantly, it demonstrated how a small internal tool can solve a real content production problem.
+            </p>
+          </section>
+
+          <section>
+            <h2 class="text-2xl font-semibold text-foreground mb-3">What This Project Shows</h2>
+            <p>
+              This case study reflects a product-thinking approach: identifying a real workflow bottleneck,
+              designing a simple solution, and using technology to improve execution speed in a marketing-related process.
+            </p>
+          </section>
+        </div>
+
+        <div class="mt-10 flex flex-wrap gap-3">
+          <Button href="https://instagram-reels-maker-production.up.railway.app/instagram-frame.html" variant="primary" size="sm">Open Live Tool</Button>
+          <Button href="/portfolio" variant="secondary" size="sm">Back to Projects</Button>
+        </div>
+      </section>
+    </main>
+    <Footer />
+  </body>
+</html>

@@ -1,0 +1,109 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/sections/Header.astro';
+import Footer from '../../components/sections/Footer.astro';
+import Button from '../../components/ui/button/Button.astro';
+---
+
+<html lang="en" data-theme="dark" class="dark">
+  <head>
+    <BaseHead
+      title="Rast Biznisa — Case Study"
+      description="Case study for an Instagram experiment focused on business-oriented content, audience engagement and organic growth testing."
+    />
+  </head>
+  <body>
+    <Header />
+    <main class="mx-auto max-w-4xl px-4 py-12">
+      <div class="mb-8">
+        <Button href="/portfolio" variant="outline" size="sm">← Back to Projects</Button>
+      </div>
+
+      <section class="card-surface p-8 md:p-10">
+        <p class="text-sm uppercase tracking-[0.18em] text-[var(--accent)] mb-3">Case Study</p>
+        <h1 class="text-3xl md:text-5xl font-semibold text-foreground m-0">Rast Biznisa — Instagram Experiment</h1>
+        <p class="mt-4 text-lg text-[color:var(--color-text-secondary)] leading-relaxed">
+          An experimental Instagram project created to test content hooks, messaging structure and growth-oriented content ideas for a business-focused audience.
+        </p>
+
+        <div class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+          <div class="rounded-xl border border-white/8 bg-white/3 p-4">
+            <p class="text-[color:var(--color-text-muted)] m-0">Project Type</p>
+            <p class="font-semibold mt-2 m-0 text-foreground">Growth Experiment</p>
+          </div>
+          <div class="rounded-xl border border-white/8 bg-white/3 p-4">
+            <p class="text-[color:var(--color-text-muted)] m-0">Role</p>
+            <p class="font-semibold mt-2 m-0 text-foreground">Content Strategy & Testing</p>
+          </div>
+          <div class="rounded-xl border border-white/8 bg-white/3 p-4">
+            <p class="text-[color:var(--color-text-muted)] m-0">Tools</p>
+            <p class="font-semibold mt-2 m-0 text-foreground">Instagram, ChatGPT, Canva</p>
+          </div>
+          <div class="rounded-xl border border-white/8 bg-white/3 p-4">
+            <p class="text-[color:var(--color-text-muted)] m-0">Year</p>
+            <p class="font-semibold mt-2 m-0 text-foreground">2026</p>
+          </div>
+        </div>
+
+        <hr class="my-8 border-[color:var(--border)]" />
+
+        <div class="space-y-8 text-[color:var(--color-text-secondary)] leading-relaxed">
+          <section>
+            <h2 class="text-2xl font-semibold text-foreground mb-3">Overview</h2>
+            <p>
+              Rast Biznisa was created as a practical experiment to understand how business-focused Instagram content performs when different hooks,
+              formats and messaging styles are tested intentionally.
+            </p>
+          </section>
+
+          <section>
+            <h2 class="text-2xl font-semibold text-foreground mb-3">Problem</h2>
+            <p>
+              Organic growth becomes difficult when content is inconsistent, generic or poorly positioned.
+              Business-oriented pages especially need clear hooks and strong formatting to earn attention.
+            </p>
+          </section>
+
+          <section>
+            <h2 class="text-2xl font-semibold text-foreground mb-3">Goal</h2>
+            <p>
+              The goal was to test practical content approaches and identify which ones are more effective at generating attention,
+              engagement and clearer content positioning.
+            </p>
+          </section>
+
+          <section>
+            <h2 class="text-2xl font-semibold text-foreground mb-3">Approach</h2>
+            <p>
+              I used the page as an experimental environment for testing different post structures, educational angles,
+              stronger hooks and content presentation styles. The purpose was not only to post consistently,
+              but to observe what makes business content more engaging and more understandable.
+            </p>
+          </section>
+
+          <section>
+            <h2 class="text-2xl font-semibold text-foreground mb-3">Outcome</h2>
+            <p>
+              The project generated practical insights about content clarity, hook design and how audience attention can be influenced
+              by stronger framing and positioning.
+            </p>
+          </section>
+
+          <section>
+            <h2 class="text-2xl font-semibold text-foreground mb-3">What This Project Shows</h2>
+            <p>
+              This case study reflects a growth-oriented mindset: using content as an experiment,
+              learning from response patterns, and improving through iteration instead of guessing.
+            </p>
+          </section>
+        </div>
+
+        <div class="mt-10 flex flex-wrap gap-3">
+          <Button href="https://www.instagram.com/rastbiznisa_bg?igsh=bHVvczFncHYwbjNk&utm_source=qr" variant="primary" size="sm">View Instagram</Button>
+          <Button href="/portfolio" variant="secondary" size="sm">Back to Projects</Button>
+        </div>
+      </section>
+    </main>
+    <Footer />
+  </body>
+</html>
